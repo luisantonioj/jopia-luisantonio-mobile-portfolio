@@ -27,9 +27,10 @@ export const ThemeProvider = ({ children }: { children: ReactNode }) => {
     card: isDarkMode ? '#1E1E1E' : '#FFFFFF',
     text: isDarkMode ? '#FFFFFF' : '#000000',
     textSecondary: isDarkMode ? '#B0B0B0' : '#666666',
-    primary: isDarkMode ? '#BB86FC' : '#6200EE',
+    primary: isDarkMode ? '#5AA9FF' : '#1976D2',
     border: isDarkMode ? '#333333' : '#E0E0E0',
-  };
+    };
+
 
   return (
     <ThemeContext.Provider value={{ isDarkMode, toggleTheme, colors }}>
