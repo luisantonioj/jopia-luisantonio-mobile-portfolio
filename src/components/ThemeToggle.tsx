@@ -2,7 +2,7 @@ import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 
-const ThemeToggle: React.FC = () => {
+const ThemeToggle = () => {
   const { isDarkMode, toggleTheme, colors } = useTheme();
 
   return (

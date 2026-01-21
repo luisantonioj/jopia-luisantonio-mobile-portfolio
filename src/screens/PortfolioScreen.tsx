@@ -8,7 +8,7 @@ import ProjectsList from '../components/ProjectsList';
 import ThemeToggle from '../components/ThemeToggle';
 import { profileData, skills, projects, contactInfo } from '../data/portfolioData';
 
-const PortfolioScreen: React.FC = () => {
+const PortfolioScreen = () => {
   const { colors } = useTheme();
   const [isLoading, setIsLoading] = useState(true);
 

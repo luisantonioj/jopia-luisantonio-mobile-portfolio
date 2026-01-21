@@ -1,16 +1,14 @@
-import React, { useState } from 'react';
-import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, StyleSheet } from 'react-native';
 import { ThemeProvider } from './src/context/ThemeContext';
 import PortfolioScreen from './src/screens/PortfolioScreen';
 
 export default function App() {
   return (
     <ThemeProvider>
-      <SafeAreaView style={styles.container}>
+      <View style={styles.container}>
         <PortfolioScreen />
-        <StatusBar style="auto" />
-      </SafeAreaView>
+      </View>
     </ThemeProvider>
   );
 }
