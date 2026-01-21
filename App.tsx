@@ -1,27 +1,22 @@
+import React, { useState } from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
-import { Image } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
+import { ThemeProvider } from './src/context/ThemeContext';
+import PortfolioScreen from './src/screens/PortfolioScreen';
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Image 
-        source={require('./assets/splash-icon.png')}
-        style={{ width: 200, height: 200 }}
-      />
-      <Text>Luis Antonio M. Jopia</Text>
-      <Text>Web and Mobile Developer</Text>
-
-      <StatusBar style="auto" />
-    </View>
+    <ThemeProvider>
+      <SafeAreaView style={styles.container}>
+        <PortfolioScreen />
+        <StatusBar style="auto" />
+      </SafeAreaView>
+    </ThemeProvider>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
