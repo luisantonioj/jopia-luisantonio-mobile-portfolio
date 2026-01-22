@@ -1,5 +1,9 @@
 import { Project, Contact } from '../types';
 
+const medisysVideo = require('../../assets/videos/medisys-landing.mp4');
+const studySpotPHVideo = require('../../assets/videos/studyspotph-landing.mp4');
+const pinoyRecipeFinderVideo = require('../../assets/videos/pinoy-recipe-finder-landing.mp4');
+
 export const profileData = {
   name: 'Luis Antonio M. Jopia',
   bio: 'A developer passionate about building mobile and web applications. I love creating elegant solutions to complex problems.',
@@ -25,6 +29,7 @@ export const projects: Project[] = [
     description: 'A role-based hospital management system designed to streamline appointment scheduling, medical records management, and operational workflows for healthcare providers.',
     technologies: ['React', 'TailwindCSS', 'Node.js', 'Express', 'MongoDB',],
     link: 'https://github.com/luisantonioj/final-project-group1-webdevt-frontend',
+    video: medisysVideo,
   },
   {
     id: '2',
@@ -32,6 +37,7 @@ export const projects: Project[] = [
     description: 'A booking platform for co-working spaces and study hubs, enabling users to discover locations, view detailed listings, and manage reservations through a personalized dashboard.',
     technologies: ['React', 'TailwindCSS'],
     link: 'https://github.com/luisantonioj/midterm-project',
+    video: studySpotPHVideo,
   },
   {
     id: '3',
@@ -39,6 +45,7 @@ export const projects: Project[] = [
     description: 'A food discovery application that helps users explore and search for Filipino recipes with clear instructions and curated local dishes.',
     technologies: ['React', 'TailwindCSS'],
     link: 'https://github.com/luisantonioj/pinoy-recipe-finder',
+    video: pinoyRecipeFinderVideo,
   },
 ];
 

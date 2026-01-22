@@ -4,6 +4,7 @@ export interface Project {
   description: string;
   technologies: string[];
   link?: string;
+  video?: any;
 }
 
 export interface Contact {

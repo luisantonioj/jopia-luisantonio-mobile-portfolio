@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, TouchableOpacity, Linking, StyleSheet } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 import { Project } from '../types';
+import { Video, ResizeMode } from 'expo-av';
 
 interface ProjectsListProps {
   projects: Project[];
@@ -25,6 +26,17 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
       onPress={() => handleProjectPress(item.link)}
       activeOpacity={0.7}
     >
+      {item.video && (
+        <Video
+          source={item.video}
+          style={styles.projectVideo}
+          resizeMode={ResizeMode.COVER}
+          useNativeControls={false}
+          isLooping
+          shouldPlay
+          isMuted
+        />
+      )}
       <Text style={[styles.projectTitle, { color: colors.text }]}>
         {item.title}
       </Text>
@@ -85,6 +97,12 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.1,
     shadowRadius: 4,
     elevation: 3,
+  },
+  projectVideo: {
+    width: '100%',
+    height: 200,
+    borderRadius: 12,
+    marginBottom: 12,
   },
   projectTitle: {
     fontSize: 20,
