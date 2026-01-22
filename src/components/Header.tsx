@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, ImageSourcePropType } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
 
 interface HeaderProps {
   name: string;
   bio: string;
-  profileImage: string;
+  profileImage: ImageSourcePropType;
 }
 
 const Header: React.FC<HeaderProps> = ({ name, bio, profileImage }) => {
@@ -14,7 +14,7 @@ const Header: React.FC<HeaderProps> = ({ name, bio, profileImage }) => {
   return (
     <View style={[styles.container, { backgroundColor: colors.card }]}>
       <Image
-        source={{ uri: profileImage }}
+        source={profileImage}
         style={styles.profileImage}
       />
       <Text style={[styles.name, { color: colors.text }]}>{name}</Text>

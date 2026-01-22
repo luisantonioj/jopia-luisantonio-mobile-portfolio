@@ -1,5 +1,6 @@
 import { Project, Contact } from '../types';
 
+const profileImage = require('../../assets/images/luis-image.png');
 const medisysVideo = require('../../assets/videos/medisys-landing.mp4');
 const studySpotPHVideo = require('../../assets/videos/studyspotph-landing.mp4');
 const pinoyRecipeFinderVideo = require('../../assets/videos/pinoy-recipe-finder-landing.mp4');
@@ -7,7 +8,7 @@ const pinoyRecipeFinderVideo = require('../../assets/videos/pinoy-recipe-finder-
 export const profileData = {
   name: 'Luis Antonio M. Jopia',
   bio: 'A developer passionate about building mobile and web applications. I love creating elegant solutions to complex problems.',
-  profileImage: 'https://via.placeholder.com/150', // Replace with your image URL
+  profileImage: profileImage,
 };
 
 export const skills: string[] = [
