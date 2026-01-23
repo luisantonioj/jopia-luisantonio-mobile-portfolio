@@ -36,6 +36,9 @@ const PortfolioScreen = () => {
 
   return (
     <View style={[styles.container, { backgroundColor: colors.background }]}>
+      <View style={styles.floatingToggle}>
+        <ThemeToggle />
+      </View>
       <ScrollView
         style={styles.scrollView}
         showsVerticalScrollIndicator={false}
@@ -45,7 +48,7 @@ const PortfolioScreen = () => {
           bio={profileData.bio}
           profileImages={profileData.profileImages}
         />
-        
+
         <View style={styles.paddedContent}>
           <SkillsSection skills={skills} />
           
@@ -54,7 +57,6 @@ const PortfolioScreen = () => {
           <ProjectsList projects={projects} />
           
           <View style={styles.toggleContainer}>
-            <ThemeToggle />
           </View>
         </View>
       </ScrollView>
@@ -66,6 +68,12 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  floatingToggle: {
+    position: 'absolute',
+    top: 40,
+    right: 16,
+    zIndex: 100,
+  },
   loadingContainer: {
     flex: 1,
     justifyContent: 'center',
@@ -74,7 +82,6 @@ const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
-  // Container for all content after header with padding
   paddedContent: {
     paddingHorizontal: 16,
     paddingBottom: 40,

@@ -15,23 +15,16 @@ const ThemeToggle = () => {
       onPress={toggleTheme}
       activeOpacity={0.8}
     >
-      {/* <View style={styles.content}>
-        <Feather
-          name={isDarkMode ? 'sun' : 'moon'}
-          size={18}
-          color="#FFFFFF"
-        /> */}
         <Text style={styles.buttonText}>
-          {isDarkMode ? 'Light Mode' : 'Dark Mode'}
+          {isDarkMode ? '☀️' : '🌙'}
         </Text>
-      {/* </View> */}
     </TouchableOpacity>
   );
 };
 
 const styles = StyleSheet.create({
   button: {
-    paddingHorizontal: 24,
+    paddingHorizontal: 15,
     paddingVertical: 12,
     borderRadius: 25,
     alignItems: 'center',
