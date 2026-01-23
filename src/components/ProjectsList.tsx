@@ -57,7 +57,7 @@ const ProjectsList: React.FC<ProjectsListProps> = ({ projects }) => {
       </View>
       {item.link && (
         <Text style={[styles.viewLink, { color: colors.primary }]}>
-          View Project →
+          View GitHub →
         </Text>
       )}
     </TouchableOpacity>
