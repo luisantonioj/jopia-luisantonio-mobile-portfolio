@@ -18,13 +18,15 @@ export const profileData = {
 export const skills: string[] = [
   'React Native',
   'React',
+  'Next.js',
   'TypeScript',
   'JavaScript',
-  'Node.js',
-  'Express',
+  'Python',
+  'Java',
+  'C++',
   'MongoDB',
+  'Supabase',
   'Git',
-  'REST APIs',
 ];
 
 export const projects: Project[] = [

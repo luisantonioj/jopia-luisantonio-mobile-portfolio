@@ -24,7 +24,7 @@ const ThemeToggle = () => {
 
 const styles = StyleSheet.create({
   button: {
-    paddingHorizontal: 15,
+    paddingHorizontal: 13,
     paddingVertical: 12,
     borderRadius: 25,
     alignItems: 'center',
@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: '#FFFFFF',
-    fontSize: 16,
+    fontSize: 13,
     fontWeight: '600',
   },
     content: {
