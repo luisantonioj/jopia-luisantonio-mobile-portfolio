@@ -8,7 +8,7 @@ const pinoyRecipeFinderVideo = require('../../assets/videos/pinoy-recipe-finder-
 
 export const profileData = {
   name: 'Luis Antonio',
-  bio: 'A developer passionate about building mobile and web applications. I love creating elegant solutions to complex problems.',
+  bio: 'A developer passionate about building mobile and web applications. I enjoy crafting innovative digital solutions that simplify complex problems.',
   profileImages: {
     light: profileImage,
     dark: profileImageDark
