@@ -13,10 +13,8 @@ const PortfolioScreen = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Simulate loading data (you can replace this with actual data fetching)
     const loadData = async () => {
       try {
-        // Simulate API call or data loading
         await new Promise(resolve => setTimeout(resolve, 1000));
         setIsLoading(false);
       } catch (error) {
@@ -40,23 +38,24 @@ const PortfolioScreen = () => {
     <View style={[styles.container, { backgroundColor: colors.background }]}>
       <ScrollView
         style={styles.scrollView}
-        contentContainerStyle={styles.scrollContent}
         showsVerticalScrollIndicator={false}
       >
         <Header
           name={profileData.name}
           bio={profileData.bio}
-          profileImage={profileData.profileImage}
+          profileImages={profileData.profileImages}
         />
         
-        <SkillsSection skills={skills} />
-        
-        <ContactSection contact={contactInfo} />
-        
-        <ProjectsList projects={projects} />
-        
-        <View style={styles.toggleContainer}>
-          <ThemeToggle />
+        <View style={styles.paddedContent}>
+          <SkillsSection skills={skills} />
+          
+          <ContactSection contact={contactInfo} />
+          
+          <ProjectsList projects={projects} />
+          
+          <View style={styles.toggleContainer}>
+            <ThemeToggle />
+          </View>
         </View>
       </ScrollView>
     </View>
@@ -75,8 +74,9 @@ const styles = StyleSheet.create({
   scrollView: {
     flex: 1,
   },
-  scrollContent: {
-    padding: 16,
+  // Container for all content after header with padding
+  paddedContent: {
+    paddingHorizontal: 16,
     paddingBottom: 40,
   },
   toggleContainer: {
