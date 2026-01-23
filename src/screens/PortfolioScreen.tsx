@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   },
   paddedContent: {
     paddingHorizontal: 16,
-    paddingBottom: 40,
+    paddingBottom: 20,
   },
   toggleContainer: {
     alignItems: 'center',
