@@ -16,17 +16,19 @@ export const profileData = {
 };
 
 export const skills: string[] = [
-  'React Native',
-  'React',
-  'Next.js',
   'TypeScript',
   'JavaScript',
   'Python',
   'Java',
   'C++',
+  'React Native',
+  'React',
+  'Next.js',
   'MongoDB',
   'Supabase',
   'Git',
+  'Vercel',
+  'IntelliJ IDEA'
 ];
 
 export const projects: Project[] = [
