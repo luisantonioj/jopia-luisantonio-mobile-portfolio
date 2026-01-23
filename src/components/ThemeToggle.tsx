@@ -1,7 +1,6 @@
 import React from 'react';
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 import { useTheme } from '../context/ThemeContext';
-// import { Feather } from '@expo/vector-icons';
 
 const ThemeToggle = () => {
   const { isDarkMode, toggleTheme, colors } = useTheme();
